@@ -5,10 +5,9 @@ const bodyParser = require('koa-bodyparser');
 const Router = require('koa-router');
 const router = new Router();
 
-router.get("/star_pic/:text", require('./routes/star_pic'));
+router.get('/star_pic/:text', require('./routes/star_pic'));
 
-app
-    .use(router.routes())
+app.use(router.routes())
     .use(router.allowedMethods())
     .use(morgan('dev'))
     .use(bodyParser());

@@ -5,16 +5,19 @@
   "main": "index.js",
   "scripts": {
     "start": "node",
-    "dev": "nodemon"
+    "dev": "nodemon",
+    "format": "prettier \"**/*.{js,mjs}\" --write"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "got": "^9.6.0",
     "koa": "^2.7.0",
     "koa-bodyparser": "^4.2.1",
     "koa-morgan": "^1.0.1",
     "koa-router": "^7.4.0",
-    "morgan": "^1.9.1"
+    "morgan": "^1.9.1",
+    "prettier": "^1.18.2"
   },
   "devDependencies": {
     "nodemon": "^1.19.1"
